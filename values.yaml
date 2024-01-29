@@ -10,7 +10,7 @@ dbRootPassword: "password"
 dbRds: false
 
 image:
-  repository: marcrine/tiberbu
+  repository: marcrine/tiberbuv2
   tag: testing
   pullPolicy: IfNotPresent
 
