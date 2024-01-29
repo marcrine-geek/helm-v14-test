@@ -11,7 +11,7 @@ dbRds: false
 
 image:
   repository: marcrine/tiberbu
-  tag: latest
+  tag: testing
   pullPolicy: IfNotPresent
 
 nginx:
