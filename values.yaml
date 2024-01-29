@@ -12,7 +12,7 @@ dbRds: false
 image:
   repository: marcrine/tiberbuv2
   tag: testing
-  pullPolicy: IfNotPresent
+  pullPolicy: Always
 
 nginx:
   replicaCount: 1
