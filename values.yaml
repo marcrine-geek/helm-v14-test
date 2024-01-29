@@ -284,9 +284,9 @@ jobs:
     args: []
 
   createSite:
-    enabled: false
+    enabled: true
     forceCreate: false
-    siteName: "erp.cluster.local"
+    siteName: "cloud-test.tiberbu.com"
     adminPassword: "changeit"
     installApps:
     - "erpnext"
