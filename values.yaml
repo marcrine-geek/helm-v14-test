@@ -340,7 +340,8 @@ jobs:
     affinity: {}
     tolerations: []
 
-imagePullSecrets: []
+imagePullSecrets:
+- name: tiberburegistry
 nameOverride: ""
 fullnameOverride: ""
 
