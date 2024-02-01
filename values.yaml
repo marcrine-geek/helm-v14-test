@@ -3,7 +3,7 @@
 # Declare variables to be passed into your templates.
 
 # Configure external database host
-dbHost: "tiberbu-database.cxu82sq6y0l2.us-east-1.rds.amazonaws.com"
+dbHost: "tiberbu-dev-database.c7ce042sumx9.eu-west-1.rds.amazonaws.com"
 dbPort: 3306
 dbRootUser: "admin"
 dbRootPassword: "password"
