@@ -3,15 +3,15 @@
 # Declare variables to be passed into your templates.
 
 # Configure external database host
-dbHost: "192.168.10.217"
+dbHost: "tiberbu-database.cxu82sq6y0l2.us-east-1.rds.amazonaws.com"
 dbPort: 3306
 dbRootUser: "admin"
 dbRootPassword: "password"
-dbRds: false
+dbRds: true
 
 image:
-  repository: marcrine/tiberbuv2
-  tag: testing
+  repository: 813389018368.dkr.ecr.us-east-1.amazonaws.com/tiberbu
+  tag: latest
   pullPolicy: Always
 
 nginx:
@@ -235,13 +235,13 @@ persistence:
     enabled: true
     # existingClaim: ""
     size: 8Gi
-    storageClass: "nfs"
+    storageClass: "gp2"
   logs:
     # Container based log search and analytics stack recommended
     enabled: false
     # existingClaim: ""
     size: 8Gi
-    storageClass: "nfs"
+    storageClass: "gp2"
 
 # Ingress
 ingress:
@@ -284,7 +284,7 @@ jobs:
     args: []
 
   createSite:
-    enabled: true
+    enabled: false
     forceCreate: false
     siteName: "cloud-test.tiberbu.com"
     adminPassword: "changeit"
