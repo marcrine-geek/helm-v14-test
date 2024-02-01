@@ -10,8 +10,8 @@ dbRootPassword: "password"
 dbRds: true
 
 image:
-  repository: 813389018368.dkr.ecr.us-east-1.amazonaws.com/tiberbu
-  tag: latest
+  repository: marcrine/tiberbuv2
+  tag: testing
   pullPolicy: Always
 
 nginx:
@@ -235,13 +235,13 @@ persistence:
     enabled: true
     # existingClaim: ""
     size: 8Gi
-    storageClass: "gp2"
+    storageClass: "amazon-efs"
   logs:
     # Container based log search and analytics stack recommended
     enabled: false
     # existingClaim: ""
     size: 8Gi
-    storageClass: "gp2"
+    storageClass: "amazon-efs"
 
 # Ingress
 ingress:
