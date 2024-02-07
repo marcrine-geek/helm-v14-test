@@ -37,4 +37,10 @@ spec:
           averageUtilization: {{ .Values.nginx.autoscaling.targetMemory }}
         {{- end }}
     {{- end }}
+    volumes:
+      - name: nginx-config
+        {{- if .Values.nginx.configMap.enabled }}
+        configMap:
+          name: {{ .Values.nginx.configMap.name }}
+        {{- end }}
 {{- end }}
