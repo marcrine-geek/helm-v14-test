@@ -7,7 +7,7 @@ fullnameOverride: ''
 image:
   pullPolicy: Always
   repository: marcrine/tiberbuv2
-  tag: tiberbu
+  tag: tiberbuv1
 imagePullSecrets:
   - name: tiberburegistry
 ingress:
