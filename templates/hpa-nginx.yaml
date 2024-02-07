@@ -38,9 +38,3 @@ spec:
         {{- end }}
     {{- end }}
 {{- end }}
-{{- if .Values.nginx.configMap.enabled }}
-volumes:
-  - name: nginx-config
-    configMap:
-      name: {{ .Values.nginx.configMap.name }}
-{{- end }}
